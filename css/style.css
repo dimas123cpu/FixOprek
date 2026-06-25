@@ -1,0 +1,73 @@
+/* ==========================================
+   CSS Kustom Untuk FixOprek Landing Page
+   ========================================== */
+
+/* Animasi Transisi Mulus Saat Pindah Halaman */
+.view-section {
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.view-section.hidden {
+  display: none !important;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Modifikasi Scrollbar Browser Agar Senada Dengan Tema Dark */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1329;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Pengaturan Tombol Filter Kategori Saat Aktif */
+.active-filter-btn {
+  background-color: #10b981 !important;
+  color: #020617 !important;
+}
+
+/* Pengaturan Tombol Filter Kategori Saat Tidak Aktif */
+.inactive-filter-btn {
+  background-color: #0f172a !important;
+  color: #cbd5e1 !important;
+}
+
+.inactive-filter-btn:hover {
+  background-color: #1e293b !important;
+  color: #10b981 !important;
+}
+
+/* Efek Glow Neon Hijau untuk Badge & Terminal Box */
+.raw-terminal-glow {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+  text-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
+}
+
+.hacker-terminal-border {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.05);
+  animation: pulseBorder 4s infinite ease-in-out;
+}
+
+/* Animasi bernapas halus pada frame box terminal */
+@keyframes pulseBorder {
+  0%,
+  100% {
+    border-color: rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    border-color: rgba(16, 185, 129, 0.5);
+  }
+}
