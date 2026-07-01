@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      FixOprek - Spesialis Bypass iPhone, UBL, Custom ROM & Root Profesional
+    </title>
+    <meta
+      name="google-site-verification"
+      content="oe0R1-8FDS7ehsCJ8rfVbsy0xtRUFkt_wOe6XtNuTBk" />
+    <meta property="og:title" content="FixOprek" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fixOprek.com/" />
+    <meta
+      name="description"
+      content="FixOprek menyediakan jasa bypass iPhone (iCloud), Unlock Bootloader (UBL), instalasi Custom ROM, dan rooting Android secara profesional, aman, dan bergaransi." />
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="canonical" href="https://fixOprek.com/" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Menghubungkan ke File CSS Eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[#090d16] text-slate-100 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+    <!-- Navigation Bar -->
+    <nav
+      class="sticky top-0 z-50 bg-[#090d16]/80 backdrop-blur-md border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <a
+              href="#home"
+              onclick="navigateTo('home-view')"
+              class="flex items-center gap-2">
+              <div
+                class="bg-gradient-to-tr from-emerald-500 to-teal-400 p-2 rounded-xl shadow-lg shadow-emerald-500/20">
+                <i class="fa-solid fa-microchip text-slate-950 text-xl"></i>
+              </div>
+              <span
+                class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent">
+                FIX<span class="text-emerald-400">OPREK</span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="#home"
+              onclick="navigateTo('home-view')"
+              class="nav-link text-emerald-400 border-b-2 border-emerald-500 pb-1 font-semibold text-sm transition tracking-wide">
+              Halaman Utama
+            </a>
+            <a
+              href="#layanan"
+              onclick="navigateTo('layanan-view')"
+              class="nav-link text-slate-400 hover:text-emerald-400 pb-1 font-semibold text-sm transition tracking-wide">
+              Layanan & Harga
+            </a>
+            <a
+              href="https://wa.me/6285840057371?text=Halo%20FixOprek,%20saya%20ingin%20melakukan%20diagnosis%20pada%20device%20saya..."
+              target="_blank"
+              class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-5 py-2.5 rounded-xl text-sm font-bold tracking-wide transition flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i> Diagnosis Device-mu
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-slate-400 hover:text-white focus:outline-none">
+              <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#0c1322] border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+        <a
+          href="#home"
+          onclick="
+            navigateTo('home-view');
+            toggleMobileMenu();
+          "
+          class="block text-emerald-400 py-2 text-base font-semibold"
+          >Halaman Utama</a
+        >
+        <a
+          href="#layanan"
+          onclick="
+            navigateTo('layanan-view');
+            toggleMobileMenu();
+          "
+          class="block text-slate-300 hover:text-emerald-400 py-2 text-base font-semibold"
+          >Layanan & Harga</a
+        >
+        <hr class="border-slate-800 my-2" />
+        <a
+          href="https://wa.me/6285840057371?text=Halo%20FixOprek..."
+          target="_blank"
+          class="w-full text-center bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold py-3 rounded-xl block text-sm transition">
+          💬 Diagnosis Device-mu
+        </a>
+      </div>
+    </nav>
+
+    <!-- VIEW 1: HALAMAN UTAMA (INDEX) -->
+    <div id="home-view" class="view-section relative z-10">
+      <!-- Hero dengan Efek Hacker Matrix -->
+      <section
+        class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center md:text-left rounded-3xl overflow-hidden my-4 bg-slate-950/40 border border-slate-900">
+        <!-- Canvas untuk Animasi Matrix -->
+        <canvas
+          id="hacker-matrix"
+          class="absolute inset-0 w-full h-full object-cover z-0 opacity-20 pointer-events-none"></canvas>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+          <div class="md:col-span-7 space-y-6">
+            <span
+              class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 text-xs font-bold px-4 py-2 rounded-full border border-emerald-500/20 uppercase tracking-widest raw-terminal-glow">
+              <span
+                class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              SYSTEM OVERRIDE ACTIVE
+            </span>
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight md:leading-[1.1] text-white">
+              Keluarkan Potensi Penuh
+              <span
+                class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent"
+                >Gadget Anda</span
+              >
+              Tanpa Batas!
+            </h1>
+            <p
+              class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl">
+              iPhone tersangkut iCloud? Android lemot penuh bloatware bawaan
+              pabrik, atau butuh hak akses root? Serahkan pada ahlinya. Aman,
+              cepat, dan bergaransi.
+            </p>
+
+            <!-- Tombol Aksi Utama -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <button
+                onclick="navigateTo('layanan-view')"
+                class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 transition transform hover:-translate-y-0.5 duration-200 text-center">
+                Lihat Daftar Layanan & Harga
+              </button>
+              <a
+                href="https://wa.me/6285840057371?text=Halo%20FixOprek,%20saya%20mau%20konsultasi%20mengenai%20kendala%20HP..."
+                target="_blank"
+                class="bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-200 font-bold px-8 py-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                Cek Solusi Instan
+              </a>
+            </div>
+
+            <!-- Statistik Counter yang Sudah Diperbaiki Tata Letaknya -->
+            <div
+              class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800/60 max-w-xl w-full text-left">
+              <div class="flex flex-col justify-start">
+                <p
+                  class="text-xl sm:text-2xl font-bold text-white tracking-wider font-mono select-none whitespace-nowrap">
+                  <span id="count-hp" data-target="500">0</span>+
+                </p>
+                <p
+                  class="text-[10px] sm:text-xs text-slate-500 mt-1 leading-tight">
+                  HP Sukses Di-oprek
+                </p>
+              </div>
+              <div class="flex flex-col justify-start">
+                <p
+                  class="text-xl sm:text-2xl font-bold text-white tracking-wider font-mono select-none whitespace-nowrap">
+                  <span id="count-rate" data-target="99.8">0</span>%
+                </p>
+                <p
+                  class="text-[10px] sm:text-xs text-slate-500 mt-1 leading-tight">
+                  Tingkat Keberhasilan
+                </p>
+              </div>
+              <div class="flex flex-col justify-start">
+                <p
+                  class="text-xl sm:text-2xl font-bold text-white tracking-wider font-mono select-none whitespace-nowrap">
+                  <span id="count-garansi" data-target="7">0</span>
+                  <span
+                    class="text-xs sm:text-sm font-sans font-medium text-slate-300"
+                    >Hari</span
+                  >
+                </p>
+                <p
+                  class="text-[10px] sm:text-xs text-slate-500 mt-1 leading-tight">
+                  Jaminan Garansi Penuh
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminal Hacker dengan Efek Ketik -->
+          <div class="md:col-span-5 relative flex justify-center">
+            <div
+              class="absolute inset-0 bg-emerald-500/10 rounded-3xl filter blur-3xl -z-10 w-full h-full max-w-[400px] mx-auto"></div>
+            <div
+              class="bg-gradient-to-b from-slate-900 to-slate-950 border border-emerald-500/30 p-6 md:p-8 rounded-3xl shadow-2xl max-w-[400px] w-full space-y-6 relative hacker-terminal-border">
+              <div
+                class="flex justify-between items-center pb-4 border-b border-slate-800">
+                <span
+                  class="text-xs md:text-sm font-bold text-emerald-400 tracking-wider font-mono"
+                  ><i class="fa-solid fa-terminal animate-pulse mr-2"></i
+                  >ROOT@FIXOPREK:~#</span
+                >
+                <span
+                  id="terminal-status"
+                  class="px-2 py-1 bg-amber-500/10 text-amber-400 rounded text-[10px] font-mono font-bold animate-pulse"
+                  >EXECUTING...</span
+                >
+              </div>
+              <ul class="space-y-4 font-mono text-xs md:text-sm text-left">
+                <li class="flex items-start gap-3 min-h-[24px]">
+                  <i
+                    class="fa-solid fa-angle-right text-emerald-400 mt-1 hidden"
+                    id="arrow-1"></i>
+                  <span id="line-1"></span>
+                </li>
+                <li class="flex items-start gap-3 min-h-[24px]">
+                  <i
+                    class="fa-solid fa-angle-right text-emerald-400 mt-1 hidden"
+                    id="arrow-2"></i>
+                  <span id="line-2"></span>
+                </li>
+                <li class="flex items-start gap-3 min-h-[24px]">
+                  <i
+                    class="fa-solid fa-angle-right text-emerald-400 mt-1 hidden"
+                    id="arrow-3"></i>
+                  <span id="line-3"></span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-emerald-400 border-t border-slate-800/80 pt-4 font-bold min-h-[40px]">
+                  <i
+                    class="fa-solid fa-check-double mt-1 hidden"
+                    id="arrow-4"></i>
+                  <span id="line-4"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Masalah Pelanggan (Pain Points) -->
+      <section class="bg-slate-950/60 py-20 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
+              Apakah Anda Mengalami Masalah Ini?
+            </h2>
+            <p class="text-slate-400">
+              Jangan biarkan HP mahal Anda menjadi tidak berguna atau tersiksa
+              karena sistem bawaan pabrik.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400 text-xl">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">iPhone Lupa iCloud</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Membeli iPhone bekas namun tersangkut Activation Lock, atau lupa
+                password akun iCloud sendiri.
+              </p>
+            </div>
+            <div
+              class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 text-xl">
+                <i class="fa-solid fa-spinner"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Android Bootloop</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                HP tiba-tiba stuck di logo, restart terus menerus, akibat
+                kegagalan update software resmi.
+              </p>
+            </div>
+            <div
+              class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 text-xl">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Sistem Lemot & Lag</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Banyaknya bloatware bawaan yang tidak berguna memenuhi memori,
+                membuat RAM cepat habis.
+              </p>
+            </div>
+            <div
+              class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl">
+                <i class="fa-solid fa-ban"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Pembatasan Fitur</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Ingin mengubah sistem, memodifikasi performa game, atau
+                menyembunyikan status root dari bank.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keunggulan -->
+      <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
+              Mengapa Harus Memilih Jasa
+              <span class="text-emerald-400">FixOprek?</span>
+            </h2>
+            <p class="text-slate-400 leading-relaxed">
+              Kami bekerja secara profesional dengan standar keamanan tinggi dan
+              transparan.
+            </p>
+            <div class="space-y-4 pt-4">
+              <div class="flex items-start gap-4">
+                <div class="text-emerald-400 mt-1">
+                  <i class="fa-solid fa-circle-check text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">Privasi Data 100% Aman</h4>
+                  <p class="text-xs text-slate-500">
+                    Kami menjamin data pribadi Anda tetap aman selama proses
+                    pengerjaan.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="text-emerald-400 mt-1">
+                  <i class="fa-solid fa-circle-check text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">Peralatan Lisensi Resmi</h4>
+                  <p class="text-xs text-slate-500">
+                    Kami menggunakan tools bypass premium untuk mengurangi
+                    risiko hardbrick.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div
+              class="bg-[#0b1329] p-8 rounded-3xl border border-slate-800 space-y-4">
+              <span class="text-4xl text-emerald-400 block"
+                ><i class="fa-solid fa-bolt"></i
+              ></span>
+              <h3 class="text-lg font-bold text-white">Proses Cepat</h3>
+              <p class="text-sm text-slate-400">
+                Layanan seperti bypass instan, UBL, dan root dasar selesai dalam
+                hitungan jam.
+              </p>
+            </div>
+            <div
+              class="bg-[#0b1329] p-8 rounded-3xl border border-slate-800 space-y-4">
+              <span class="text-4xl text-emerald-400 block"
+                ><i class="fa-solid fa-user-shield"></i
+              ></span>
+              <h3 class="text-lg font-bold text-white">Teknisi Ahli</h3>
+              <p class="text-sm text-slate-400">
+                Ditangani langsung oleh opreker handal yang paham sistem iOS &
+                Android terbaru.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 2: HALAMAN LAYANAN & HARGA -->
+    <div id="layanan-view" class="view-section hidden relative z-10">
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span
+            class="bg-emerald-500/10 text-emerald-400 text-xs font-bold px-4 py-2 rounded-full border border-emerald-500/20 uppercase tracking-widest"
+            >Katalog Jasa Resmi</span
+          >
+          <h1 class="text-4xl md:text-5xl font-black text-white">
+            Daftar Layanan & Estimasi Harga
+          </h1>
+          <p class="text-slate-400">
+            Silahkan filter berdasarkan kategori sistem operasi gadget Anda.
+          </p>
+
+          <!-- Filter Kategori -->
+          <div class="pt-6 flex flex-wrap justify-center gap-3">
+            <button
+              onclick="filterServices('semua')"
+              class="filter-btn active-filter-btn px-5 py-2.5 rounded-xl text-sm font-bold transition">
+              Semua
+            </button>
+            <button
+              onclick="filterServices('ios')"
+              class="filter-btn inactive-filter-btn border border-slate-800 px-5 py-2.5 rounded-xl text-sm font-bold transition">
+              iOS (Bypass iCloud)
+            </button>
+            <button
+              onclick="filterServices('ubl')"
+              class="filter-btn inactive-filter-btn border border-slate-800 px-5 py-2.5 rounded-xl text-sm font-bold transition">
+              UBL (Unlock Bootloader)
+            </button>
+            <button
+              onclick="filterServices('rom-root')"
+              class="filter-btn inactive-filter-btn border border-slate-800 px-5 py-2.5 rounded-xl text-sm font-bold transition">
+              Custom ROM & Root
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid Kartu Layanan -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="services-grid">
+          <!-- Card 1 -->
+          <div
+            class="service-card bg-[#0b1329] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
+            data-category="ios">
+            <div class="space-y-6">
+              <div class="flex justify-between items-start">
+                <span
+                  class="px-3 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-mono font-bold tracking-wider"
+                  >iOS (iCloud)</span
+                >
+                <span class="text-3xl text-slate-500"
+                  ><i class="fa-solid fa-wifi"></i
+                ></span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Bypass iCloud Wifi-Only (iPad/iPhone)
+              </h3>
+              <p class="text-sm text-slate-400">
+                Bypass Activation Lock tanpa sinyal seluler. Cocok untuk iPad
+                atau iPhone media player.
+              </p>
+            </div>
+            <div class="pt-8 space-y-4">
+              <div class="flex justify-between items-end">
+                <span class="text-xs text-slate-500">Estimasi Biaya</span>
+                <span class="text-2xl font-extrabold text-emerald-400"
+                  >Rp 300.000+</span
+                >
+              </div>
+              <button
+                onclick="openBooking('Bypass iCloud Wifi-Only')"
+                class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl text-sm transition">
+                Pesan Jasa
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="service-card bg-[#0b1329] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
+            data-category="ios">
+            <div class="space-y-6">
+              <div class="flex justify-between items-start">
+                <span
+                  class="px-3 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-mono font-bold tracking-wider"
+                  >iOS (iCloud)</span
+                >
+                <span class="text-3xl text-slate-500"
+                  ><i class="fa-solid fa-signal"></i
+                ></span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                UnlockSeluler (Signal ON)
+              </h3>
+              <p class="text-sm text-slate-400">
+                Bypass iPhone agar bisa menggunakan kartu SIM kembali secara
+                normal (Sinyal 4G ON).
+              </p>
+            </div>
+            <div class="pt-8 space-y-4">
+              <div class="flex justify-between items-end">
+                <span class="text-xs text-slate-500">Estimasi Biaya</span>
+                <span class="text-2xl font-extrabold text-emerald-400"
+                  >Rp 350.000+</span
+                >
+              </div>
+              <button
+                onclick="openBooking('Unlock Seluler (Signal ON)')"
+                class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl text-sm transition">
+                Pesan Jasa
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="service-card bg-[#0b1329] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
+            data-category="ubl">
+            <div class="space-y-6">
+              <div class="flex justify-between items-start">
+                <span
+                  class="px-3 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-mono font-bold tracking-wider"
+                  >Android Bootloader</span
+                >
+                <span class="text-3xl text-slate-500"
+                  ><i class="fa-solid fa-unlock"></i
+                ></span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Unlock Bootloader (UBL) Instan/Resmi
+              </h3>
+              <p class="text-sm text-slate-400">
+                Membuka kunci bootloader sistem Android untuk persiapan
+                kustomisasi ROM dan Root.
+              </p>
+            </div>
+            <div class="pt-8 space-y-4">
+              <div class="flex justify-between items-end">
+                <span class="text-xs text-slate-500">Estimasi Biaya</span>
+                <span class="text-2xl font-extrabold text-emerald-400"
+                  >Rp 150.000+</span
+                >
+              </div>
+              <button
+                onclick="openBooking('Unlock Bootloader (UBL)')"
+                class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl text-sm transition">
+                Pesan Jasa
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="service-card bg-[#0b1329] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
+            data-category="rom-root">
+            <div class="space-y-6">
+              <div class="flex justify-between items-start">
+                <span
+                  class="px-3 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-mono font-bold tracking-wider"
+                  >Custom OS</span
+                >
+                <span class="text-3xl text-slate-500"
+                  ><i class="fa-solid fa-compact-disc"></i
+                ></span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Instalasi Custom ROM & Recovery
+              </h3>
+              <p class="text-sm text-slate-400">
+                Ganti OS bawaan ke Pixel Experience, LineageOS, Nusantara, dll.
+              </p>
+            </div>
+            <div class="pt-8 space-y-4">
+              <div class="flex justify-between items-end">
+                <span class="text-xs text-slate-500">Estimasi Biaya</span>
+                <span class="text-2xl font-extrabold text-emerald-400"
+                  >Rp 350.000+</span
+                >
+              </div>
+              <button
+                onclick="openBooking('Instalasi Custom ROM & Recovery')"
+                class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl text-sm transition">
+                Pesan Jasa
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="service-card bg-[#0b1329] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
+            data-category="rom-root">
+            <div class="space-y-6">
+              <div class="flex justify-between items-start">
+                <span
+                  class="px-3 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-mono font-bold tracking-wider"
+                  >Root Access</span
+                >
+                <span class="text-3xl text-slate-500"
+                  ><i class="fa-solid fa-bolt"></i
+                ></span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Rooting (Magisk / KernelSU / APatch)
+              </h3>
+              <p class="text-sm text-slate-400">
+                Akses root penuh untuk tweak sistem, pasang modul gaming,
+                lengkap dengan bypass m-banking.
+              </p>
+            </div>
+            <div class="pt-8 space-y-4">
+              <div class="flex justify-between items-end">
+                <span class="text-xs text-slate-500">Estimasi Biaya</span>
+                <span class="text-2xl font-extrabold text-emerald-400"
+                  >Rp 100.000+</span
+                >
+              </div>
+              <button
+                onclick="openBooking('Rooting (Magisk / KernelSU)')"
+                class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl text-sm transition">
+                Pesan Jasa
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Booking Modal Box -->
+    <div
+      id="booking-modal"
+      class="fixed inset-0 bg-[#090d16]/85 backdrop-blur-md hidden items-center justify-center z-50 p-4">
+      <div
+        class="bg-slate-900 border border-slate-800 p-8 rounded-3xl max-w-md w-full relative space-y-6">
+        <button
+          onclick="closeBooking()"
+          class="absolute right-6 top-6 text-slate-400 hover:text-white">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold text-white">Formulir Pesanan Jasa</h3>
+          <p class="text-xs text-slate-400">
+            Silahkan isi detail singkat device Anda.
+          </p>
+        </div>
+        <form
+          id="order-form"
+          onsubmit="submitToWhatsapp(event)"
+          class="space-y-4">
+          <input type="hidden" id="selected-service" />
+          <div>
+            <label
+              class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2"
+              >Tipe Jasa Terpilih</label
+            >
+            <input
+              type="text"
+              id="display-service"
+              readonly
+              class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-emerald-400 font-bold focus:outline-none" />
+          </div>
+          <div>
+            <label
+              class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2"
+              >Merek & Tipe HP</label
+            >
+            <input
+              type="text"
+              id="device-model"
+              required
+              placeholder="Contoh: Redmi Note 10 Pro"
+              class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition" />
+          </div>
+          <div>
+            <label
+              class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2"
+              >Request / Kendala Tambahan</label
+            >
+            <textarea
+              id="device-notes"
+              placeholder="Misal: m-banking harus aman dibuka, dll."
+              class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition h-20 resize-none"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold py-4 rounded-xl text-sm transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Kirim Format Order ke
+            WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-950 py-12 border-t border-slate-900 text-center space-y-4 relative z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <span class="text-xl font-extrabold tracking-tight text-white"
+          >FIX<span class="text-emerald-400">OPREK</span></span
+        >
+        <div class="flex gap-6 text-sm text-slate-400">
+          <a
+            href="#home"
+            onclick="navigateTo('home-view')"
+            class="hover:text-emerald-400"
+            >Home</a
+          >
+          <a
+            href="#layanan"
+            onclick="navigateTo('layanan-view')"
+            class="hover:text-emerald-400"
+            >Layanan & Harga</a
+          >
+        </div>
+        <p class="text-xs text-slate-500">
+          © 2026 FixOprek Service. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Logic Script Utama (Routing, Terminal, & Counter Angka Terintegrasi) -->
+    <script>
+      // CLIENT-SIDE ROUTER LOGIC
+      function navigateTo(viewId) {
+        document.querySelectorAll(".view-section").forEach((view) => {
+          view.classList.add("hidden");
+        });
+        const target = document.getElementById(viewId);
+        if (target) {
+          target.classList.remove("hidden");
+        }
+
+        const currentHash = viewId.replace("-view", "");
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          const targetHref = link.getAttribute("href").substring(1);
+          if (targetHref === currentHash) {
+            link.className =
+              "nav-link text-emerald-400 border-b-2 border-emerald-500 pb-1 font-semibold text-sm transition tracking-wide";
+          } else {
+            link.className =
+              "nav-link text-slate-400 hover:text-emerald-400 pb-1 font-semibold text-sm transition tracking-wide";
+          }
+        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      window.addEventListener("load", () => {
+        if (window.location.hash === "#layanan") {
+          navigateTo("layanan-view");
+        } else {
+          navigateTo("home-view");
+        }
+      });
+
+      window.addEventListener("hashchange", () => {
+        if (window.location.hash === "#layanan") {
+          navigateTo("layanan-view");
+        } else {
+          navigateTo("home-view");
+        }
+      });
+
+      // Mobile Menu Button Logic
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      function toggleMobileMenu() {
+        mobileMenu.classList.add("hidden");
+      }
+
+      // Filter Jasa
+      function filterServices(category) {
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.className =
+            "filter-btn inactive-filter-btn border border-slate-800 px-5 py-2.5 rounded-xl text-sm font-bold transition";
+        });
+        event.target.className =
+          "filter-btn active-filter-btn px-5 py-2.5 rounded-xl text-sm font-bold transition";
+
+        document.querySelectorAll(".service-card").forEach((card) => {
+          if (
+            category === "semua" ||
+            card.getAttribute("data-category") === category
+          ) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      // Modal Form Handling
+      const bookingModal = document.getElementById("booking-modal");
+      const displayService = document.getElementById("display-service");
+      const selectedServiceInput = document.getElementById("selected-service");
+
+      function openBooking(serviceName) {
+        selectedServiceInput.value = serviceName;
+        displayService.value = serviceName;
+        bookingModal.className =
+          "fixed inset-0 bg-[#090d16]/85 backdrop-blur-md flex items-center justify-center z-50 p-4";
+      }
+
+      function closeBooking() {
+        bookingModal.className =
+          "fixed inset-0 bg-[#090d16]/85 backdrop-blur-md hidden items-center justify-center z-50 p-4";
+        document.getElementById("order-form").reset();
+      }
+
+      function submitToWhatsapp(event) {
+        event.preventDefault();
+        const service = selectedServiceInput.value;
+        const model = document.getElementById("device-model").value;
+        const notes =
+          document.getElementById("device-notes").value || "Tidak ada";
+
+        const whatsappNumber = "6285840057371"; // NOMOR WHATSAPP TERUPDATE ANDA
+        const templateText =
+          `Halo FixOprek, saya mau pesan Jasa berikut:\n\n` +
+          `• *Layanan:* ${service}\n` +
+          `• *Model HP:* ${model}\n` +
+          `• *Catatan:* ${notes}\n\n` +
+          `Apakah bisa segera diproses?`;
+
+        window.open(
+          `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(templateText)}`,
+          "_blank",
+        );
+        closeBooking();
+      }
+
+      // ANIMASI HITUNG ANGKA (COUNTER ANIMATION)
+      function startCounterAnimation() {
+        const counters = [
+          { id: "count-hp", isFloat: false },
+          { id: "count-rate", isFloat: true },
+          { id: "count-garansi", isFloat: false },
+        ];
+
+        counters.forEach((counter) => {
+          const el = document.getElementById(counter.id);
+          if (!el) return;
+
+          const target = parseFloat(el.getAttribute("data-target"));
+          let current = 0;
+          const increment = target / 35;
+
+          function updateCount() {
+            current += increment;
+            if (current >= target) {
+              el.innerText = counter.isFloat
+                ? target.toFixed(1)
+                : Math.floor(target);
+            } else {
+              el.innerText = counter.isFloat
+                ? current.toFixed(1)
+                : Math.floor(current);
+              requestAnimationFrame(updateCount);
+            }
+          }
+          updateCount();
+        });
+      }
+
+      // DATA TEKS UNTUK ANIMASI MENGETIK TERMINAL HACKER
+      const terminalLines = [
+        {
+          id: 1,
+          text: `<span class="text-slate-400">[iCloud]</span> bypass_tethered --force_exploit`,
+        },
+        {
+          id: 2,
+          text: `<span class="text-slate-400">[Bootloader]</span> fastboot oem unlock... <span class="text-emerald-400 font-bold">OK</span>`,
+        },
+        {
+          id: 3,
+          text: `<span class="text-slate-400">[Firmware]</span> flashing custom_rom.zip`,
+        },
+        { id: 4, text: `DEVICE OVERRIDE SUCCESSFUL! ACCESS GRANTED.` },
+      ];
+
+      let lineIndex = 0;
+
+      function typeWriterEffect() {
+        if (lineIndex < terminalLines.length) {
+          const currentLine = terminalLines[lineIndex];
+          const element = document.getElementById(`line-${currentLine.id}`);
+          const arrow = document.getElementById(`arrow-${currentLine.id}`);
+
+          if (arrow) arrow.classList.remove("hidden");
+
+          let rawText = currentLine.text;
+          let visibleText = "";
+          let i = 0;
+
+          function typeChar() {
+            if (i < rawText.length) {
+              if (rawText[i] === "<") {
+                let tagEnd = rawText.indexOf(">", i);
+                visibleText += rawText.substring(i, tagEnd + 1);
+                i = tagEnd + 1;
+              } else {
+                visibleText += rawText[i];
+                i++;
+              }
+              element.innerHTML =
+                visibleText + '<span class="animate-ping font-black">|</span>';
+              setTimeout(typeChar, 30);
+            } else {
+              element.innerHTML = rawText;
+              lineIndex++;
+              setTimeout(typeWriterEffect, 600);
+            }
+          }
+          typeChar();
+        } else {
+          const statusBadge = document.getElementById("terminal-status");
+          if (statusBadge) {
+            statusBadge.innerHTML = "EXPLOIT READY";
+            statusBadge.className =
+              "px-2 py-1 bg-emerald-500/10 text-emerald-400 rounded text-[10px] font-mono font-bold animate-pulse";
+          }
+          setTimeout(resetAndRestartTerminal, 5500);
+        }
+      }
+
+      function resetAndRestartTerminal() {
+        lineIndex = 0;
+        const statusBadge = document.getElementById("terminal-status");
+        if (statusBadge) {
+          statusBadge.innerHTML = "EXECUTING...";
+          statusBadge.className =
+            "px-2 py-1 bg-amber-500/10 text-amber-400 rounded text-[10px] font-mono font-bold animate-pulse";
+        }
+        for (let idx = 1; idx <= 4; idx++) {
+          document.getElementById(`line-${idx}`).innerHTML = "";
+          document.getElementById(`arrow-${idx}`).classList.add("hidden");
+        }
+
+        startCounterAnimation();
+        typeWriterEffect();
+      }
+
+      // ANIMASI BACKGROUND MATRIX RAIN CODE
+      const canvas = document.getElementById("hacker-matrix");
+      const ctx = canvas.getContext("2d");
+
+      function resizeCanvas() {
+        const rect = canvas.parentElement.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+      }
+      resizeCanvas();
+      window.addEventListener("resize", resizeCanvas);
+
+      const katakana =
+        "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const alphabet = katakana.split("");
+      const fontSize = 14;
+      let columns = canvas.width / fontSize;
+      const rainDrops = [];
+
+      for (let x = 0; x < columns; x++) {
+        rainDrops[x] = 1;
+      }
+
+      function drawMatrix() {
+        ctx.fillStyle = "rgba(9, 13, 22, 0.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#10b981";
+        ctx.font = fontSize + "px monospace";
+
+        for (let i = 0; i < rainDrops.length; i++) {
+          const text = alphabet[Math.floor(Math.random() * alphabet.length)];
+          ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+          if (
+            rainDrops[i] * fontSize > canvas.height &&
+            Math.random() > 0.975
+          ) {
+            rainDrops[i] = 0;
+          }
+          rainDrops[i]++;
+        }
+      }
+      setInterval(drawMatrix, 30);
+
+      // Menjalankan semua fungsi pertama kali secara sinkron
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          startCounterAnimation();
+          typeWriterEffect();
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
